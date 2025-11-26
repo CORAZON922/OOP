@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Diagnostics;
 using System.Threading.Tasks;
 
@@ -58,10 +58,10 @@ class Program
         for (int i = 0; i < searchResult.ResultsCount; i++)
         {
             var article = searchResult.GetArticle(i);
-            string cleanSnippet = article.GetCleanSnippet();
+           
 
             Console.WriteLine(article.GetFormattedInfo(i + 1));
-            Console.WriteLine($"   {cleanSnippet}\n");
+            Console.WriteLine();
         }
     }
 
